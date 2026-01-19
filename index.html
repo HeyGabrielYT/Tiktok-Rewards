@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>TikTok Bonus (Demo)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>TikTok Bonus</h2>
+  <div class="saldo">
+    <span id="saldo">R$ 2.000,00</span>
+    <button onclick="abrirSaque()">Sacar</button>
+  </div>
+</header>
+
+<section class="card orange">
+  <h3>Jogue e Ganhe</h3>
+  <p>Ganhe até <b>R$ 110</b></p>
+  <button>Iniciar</button>
+</section>
+
+<section class="card blue">
+  <h3>Convide amigos</h3>
+  <p>Ganhe até <b>R$ 230</b></p>
+  <button>Começar</button>
+</section>
+
+<section class="tasks">
+  <h3>Tarefas de hoje</h3>
+  <div class="task"><span>Assistir vídeos</span><button>Assistir</button></div>
+  <div class="task"><span>Ver anúncios</span><button>Assistir</button></div>
+  <div class="task"><span>Pesquisar</span><button>Pesquisar</button></div>
+</section>
+
+<!-- MODAL 1 -->
+<div class="modal" id="modalSaque">
+  <div class="modal-box">
+    <h3>Solicitar Saque</h3>
+    <input type="text" placeholder="Nome completo">
+    <input type="text" placeholder="Chave PIX">
+    <button onclick="avancar()">Avançar</button>
+    <button class="cancel" onclick="fechar()">Cancelar</button>
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div class="modal" id="modalAviso">
+  <div class="modal-box">
+    <h3>Aviso</h3>
+    <p>
+      ⚠️ Para você receber o saque você  <b>que pagar uma taxa  </b>.<br>
+     <b>de 21,R$.<b>.<b>
+       
+              pix:  store.bc22@gmail.com
+ 
+                 Demora cerca de 10 minutos para que o saldo chegue em sua conta.
+    </p>
+    <button onclick="fechar()">Entendi</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
