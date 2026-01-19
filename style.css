@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saldo {
+  background: #fff;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.saldo button {
+  background: #ff2c55;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.card {
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.orange { background: linear-gradient(135deg,#ff9f1a,#ff6a00); }
+.blue { background: linear-gradient(135deg,#1e90ff,#00c6ff); }
+
+.card button {
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.tasks {
+  background: #fff;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.task button {
+  background: #ff2c55;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.modal-box input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.modal-box button {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #ff2c55;
+  color: #fff;
+}
+
+.cancel {
+  background: #aaa !important;
+}
